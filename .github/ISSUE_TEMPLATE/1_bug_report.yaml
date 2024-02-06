@@ -45,7 +45,7 @@ body:
       placeholder: const errors = parser.validate(sql);
       render: typescript
       description: Please provide the minimal demo code that reproduces the issue.
-  - type: markdown
+  - type: textarea
     id: what-happened
     attributes:
       label: What happened?
