@@ -18,7 +18,8 @@ body:
   - type: dropdown
     id: sql-type
     attributes:
-      label: Which kind of SQL does the problem appear on?
+      label: Which SQL?
+      description: Which kind of SQL does the problem appear on?
       options:
         - MySQL
         - Flink
