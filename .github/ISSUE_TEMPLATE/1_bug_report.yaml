@@ -19,7 +19,6 @@ body:
     id: sql-type
     attributes:
       label: Which kind of SQL does the problem appear on?
-      multiple: true
       options:
         - MySQL
         - Flink
@@ -29,18 +28,22 @@ body:
         - Trino
         - Impala
         - Any Others
+    validations:
+      required: true
   - type: textarea
     id: sql-content
     attributes:
       label:  SQL content
-      placeholder: SELECT * FROM table
+      placeholder: SELECT * FROM table;
+      description: Please provide the minimal SQL text that reproduces the issue.
       render: markdown
   - type: textarea
     id: js-code
     attributes:
-      label:  JavasScript/TypeScript code
-      placeholder: SELECT * FROM table
+      label:  JavaScript/TypeScript code
+      placeholder: const errors = parser.validate(sql);
       render: markdown
+      description: Please provide the minimal demo code that reproduces the issue.
   - type: textarea
     id: what-happened
     attributes:
