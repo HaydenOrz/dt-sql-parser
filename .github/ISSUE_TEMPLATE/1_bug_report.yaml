@@ -37,13 +37,13 @@ body:
       label:  SQL content
       placeholder: SELECT * FROM table;
       description: Please provide the minimal SQL text that reproduces the issue.
-      render: markdown
+      render: sql
   - type: textarea
     id: js-code
     attributes:
       label:  JavaScript/TypeScript code
       placeholder: const errors = parser.validate(sql);
-      render: markdown
+      render: typescript
       description: Please provide the minimal demo code that reproduces the issue.
   - type: textarea
     id: what-happened
@@ -52,7 +52,6 @@ body:
       description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
       value: "A bug happened!"
-      render: markdown
     validations:
       required: true
   - type: textarea
